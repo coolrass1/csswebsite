@@ -1,27 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.swiper-container {
+    width: 100%;
+    height: 400px;
+    color: white;
   }
-}
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 30px;
+    background-color: #ccc;
+    color: white;
+    background-image: unset;
+ 
+    
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -15px;
+    background-color: transparent;
+    color: white;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    padding-inline: 30px;
+    padding-block: 30px;
+    border: 1px solid gainsboro;
+    background-image: unset;
+    
+   
+  }
+  
+  .ll{background: linear-gradient(to right, rgba(21, 26, 48, 0.79) 100%, rgba(21, 26, 48, 0.79) 100%, rgba(21, 26, 48, 0.07) 100%, rgba(21, 26, 48, 0) 100%);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: linear-gradient(to right, rgba(21, 26, 48, 0.79) 100%, rgba(21, 26, 48, 0.79) 100%, rgba(21, 26, 48, 0.07) 100%, rgba(21, 26, 48, 0) 100%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;}
